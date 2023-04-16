@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #3b82f6; /* Change to your preferred color */
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-button {
+  transform: translateX(100%);
+}
